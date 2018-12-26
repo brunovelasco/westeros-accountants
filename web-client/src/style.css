@@ -1,0 +1,157 @@
+/* General classes */
+body {
+  background-color: #f8f8f8 !important;
+}
+/* Disables number input's arrows */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+.noMargins {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.centerContent {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Navbar.jsx */
+#divider {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  cursor: auto;
+}
+
+.nav-link {
+  margin-bottom: 0 !important;
+  cursor: pointer;
+}
+
+#align-middle {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#align-middle > nav {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-item > button {
+  border: none;
+  border-radius: 5px;
+  transition: 0.15s;
+}
+
+.not-selected > button {
+  background-color: #f8f8f8;
+  color: #006498;
+  -webkit-box-shadow:inset 0px 0px 0px 1px #006498;
+  -moz-box-shadow:inset 0px 0px 0px 1px #006498;
+  box-shadow:inset 0px 0px 0px 1px #006498;
+}
+
+.selected > button {
+  border: none !important;
+  background-color: #006498;
+  color: white;
+}
+
+.nav-item > button:hover {
+  border: none !important;
+  background-color: #6caed1;
+  color: white;
+}
+
+/* Logo.jsx */
+@media (min-width: 576px) {
+  #westeros-logo {
+    display: none;
+  }
+
+  .width-800 {
+    max-width: 800px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #westeros-logo2, #divider {
+    display: none;
+  }
+
+  .item-left {
+    margin-right: 5px;
+  }
+
+  .item-right {
+    margin-left: 5px;
+  }
+
+  /* Navbar.jsx */
+  nav {
+    margin-top: 10px;
+  }
+}
+
+/* CSVTable.jsx */
+.ReactTable {
+  position: relative;
+}
+
+.ReactTable > .rt-table > .rt-thead {
+  background-color: #006498;
+  color: white;
+  padding: 2px;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: center; 
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.-btn:hover {
+  background-color: #6caed1 !important;
+}
+
+/* Charts.jsx */
+.chartWidth {
+  max-width: 800px !important;
+  max-height: 700px !important;
+  min-width: 300px !important;
+  /* min-height: 300px !important; */
+}
+
+.chartTitle {
+  color: #006498;
+}
+
+/* RowData.jsx */
+.card {
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+}
+
+.rowDataTitle {
+  color: #006498;
+}

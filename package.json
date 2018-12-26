@@ -1,0 +1,20 @@
+{
+  "name": "rpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd web-client && npm start",
+    "server": "cd server && npm start",
+    "start": "cd scripts && ruby format_csv.rb | concurrently --kill-others \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "3.5.1"
+  },
+  "dependencies": {
+    "popper.js": "^1.14.6"
+  }
+}
