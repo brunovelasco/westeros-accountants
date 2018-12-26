@@ -2,7 +2,7 @@
   "name": "web-client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
@@ -20,7 +20,7 @@
     "react-table": "^6.8.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "export PORT=3000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

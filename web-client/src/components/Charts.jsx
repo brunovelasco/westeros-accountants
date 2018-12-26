@@ -19,7 +19,7 @@ class Charts extends Component {
 
   componentDidMount() {
     const apiCall = axios.create({
-      baseURL: 'http://localhost:3001',
+      baseURL: 'http://localhost:5000',
     });
 
     // Gets data calculations regarding ABC curve
